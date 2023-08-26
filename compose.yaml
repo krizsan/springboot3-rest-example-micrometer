@@ -1,0 +1,7 @@
+# Starts a Zipkin server when the application is launched in the development environment.
+services:
+  zipkin:
+    container_name: rest-example-zipkin
+    image: 'openzipkin/zipkin:latest'
+    ports:
+      - '9411:9411'

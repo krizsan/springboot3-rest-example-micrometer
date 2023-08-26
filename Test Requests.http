@@ -1,0 +1,27 @@
+### Retrieve all circles
+GET http://localhost:8080/circles
+Accept: application/json
+
+### Create a new circle
+POST http://localhost:8080/circles
+Content-Type: application/json
+
+{
+  "shapeType": ".Circle",
+  "radius": 10,
+  "position": {
+    "x": 15.0,
+    "y": 20.0
+  },
+  "colour": "Colour1"
+}
+
+### Retrieve one specific circle
+GET http://localhost:8080/circles/1
+
+### Delete one circle
+DELETE http://localhost:8080/circles/1
+
+### Delete all circles
+DELETE http://localhost:8080/circles
+
